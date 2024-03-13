@@ -3,5 +3,16 @@
 </script>
 
 <Layout active="Home">
-    <h1 class="text-xl font-bold bg-red-300">woi</h1>
+    <section class="bg-white h-[700px]">
+
+    </section>
+    <section class="bg-MainBlue h-[700px]">
+
+    </section>
+    <section class="bg-white h-[700px]">
+
+    </section>
+    <section class="bg-MainBlue h-[700px]">
+
+    </section>
 </Layout>

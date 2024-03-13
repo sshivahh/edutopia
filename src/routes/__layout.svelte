@@ -1,7 +1,11 @@
 <script>
     import { onMount } from "svelte";
     import "../app.css"; //import tailwind
-    import icon from '$lib/assets/edutopia_no_bg.webp';
+    import icon from '$lib/assets/edutopia/edutopia_no_bg.webp';
+    import facebook from '$lib/assets/icons/facebook.svg';
+    import instagram from '$lib/assets/icons/instagram.svg';
+    import whatsapp from '$lib/assets/icons/whatsapp.svg';
+    
 
     let isMobile = false;
 
@@ -22,26 +26,92 @@
     </a>
     <div class="flex">
         <a href="/">
-            <button class="{active === 'Home' ? 'active' : ''} h-20 w-48 hover:bg-white hover:text-MainBlue hover:text-lg transition-all duration-300" >
+            <button class="{active === 'Home' ? 'active' : ''} w-32 h-20 lg:w-48 hover:bg-white hover:text-MainBlue hover:text-lg transition-all duration-300" >
                 Home
             </button>
         </a>
         <a href="/about">
-            <button class="{active === 'About' ? 'active' : ''} h-20 w-48 hover:bg-white hover:text-MainBlue hover:text-lg transition-all duration-300" >
+            <button class="{active === 'About' ? 'active' : ''} w-32 h-20 lg:w-48 hover:bg-white hover:text-MainBlue hover:text-lg transition-all duration-300" >
                 About
             </button>
         </a>
         <a href="/contact">
-            <button class="{active === 'Contact' ? 'active' : ''} h-20 w-48 hover:bg-white hover:text-MainBlue hover:text-lg transition-all duration-300" >
+            <button class="{active === 'Contact' ? 'active' : ''} w-32 h-20 lg:w-48 hover:bg-white hover:text-MainBlue hover:text-lg transition-all duration-300" >
                 Contact
             </button>
         </a>
     </div>
 </nav>
 <slot></slot>
-<footer class="">
-    ini footer
+<footer class="bg-slate-600 h-[300px] px-16 py-24 w-full absolute text-white flex justify-around gap-4 lg:gap-32">
+    <svg
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="0 24 150 28"
+    preserveAspectRatio="none"
+    >
+    <defs>
+      <path
+        id="gentle-wave"
+        d="M-160 44c30 0 
+      58-18 88-18s
+      58 18 88 18 
+      58-18 88-18 
+      58 18 88 18
+      v44h-352z"
+      />
+    </defs>
+    <g class="waves">
+      <use
+        xlink:href="#gentle-wave"
+        x="50"
+        y="0"
+        fill="#475569"
+        fill-opacity=".2"
+      />
+      <use
+        xlink:href="#gentle-wave"
+        x="50"
+        y="3"
+        fill="#475569"
+        fill-opacity=".5"
+      />
+      <use
+        xlink:href="#gentle-wave"
+        x="50"
+        y="6"
+        fill="#475569"
+        fill-opacity="1"
+      />
+    </g>
+    </svg>
+    
+    <div class="lg:w-[30vw]">
+        <h3>Edutopia</h3>
+        <p class="text-sm opacity-65 mt-6">Edutopia is the largest and most respected learning centre in south east asia. We have more than 6000 teachers all across the globe.</p>
+    </div>
+    <div class="lg:w-[30vw]">
+        <h3>Location</h3>
+        <p class="text-sm opacity-65 mt-6">
+            Jl. Sutera Flamboyan I No.33 Pd. Jagung, Kec. Serpong Utara, Kota Tangerang Selatan, Banten 15326
+        </p>
+    </div>
+    <div class="lg:w-[30vw]">
+        <h3>Socials</h3>
+        <div class="flex gap-3 lg:gap-10 mt-6">
+            <a href="/">
+                <img src={instagram} alt="" class="max-w-10 w-10">
+            </a>
+            <a href="/">
+                <img src={facebook} alt="" class="max-w-10 w-10">
+            </a>
+            <a href="/">
+                <img src={whatsapp} alt="" class="max-w-10 w-10"> 
+            </a>
+        </div>
+    </div>
 </footer>
+
 {:else}
 <h1 class="bg-green-600">ini mobile</h1>
 {/if}
@@ -87,5 +157,36 @@
         100% {
             bottom: 20px;
         }
+    }
+    .waves > use {
+        animation: move-forever 9s -2s linear infinite;
+    }
+
+    .waves > use:nth-child(2) {
+        animation-delay: -3s;
+        animation-duration: 10s;
+    }
+    .waves > use:nth-child(3) {
+        animation-delay: -4s;
+        animation-duration: 8s;
+    }
+
+    @keyframes move-forever {
+    0% {
+        transform: translate(-90px, 0%);
+    }
+    100% {
+        transform: translate(85px, 0%);
+    }
+    }
+
+    svg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform: translateY(-100%);
+        width: 100%;
+        height: 30vw;
+        max-height: 200px;
     }
 </style>
