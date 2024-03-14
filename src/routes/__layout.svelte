@@ -20,7 +20,7 @@
 </script>
 
 {#if !isMobile}
-<nav class="relative flex justify-end gap-0 bg-MainBlue h-20 px-10 text-white md:gap-32">
+<nav class="sticky top-0 shadow-md flex justify-center gap-0 bg-MainBlue h-20 px-10 text-white md:gap-32 z-50">
     <a href="/">
         <img src={icon} alt="" class="w-14 h-14 absolute left-10 top-1/2 -translate-y-1/2 transition-all duration-200 hover:scale-110">
     </a>
@@ -43,7 +43,7 @@
     </div>
 </nav>
 <slot></slot>
-<footer class="bg-slate-600 h-[300px] px-16 py-24 w-full absolute text-white flex justify-around gap-4 lg:gap-32">
+<footer class="bg-[#344A53] h-[300px] px-16 py-24 w-full absolute text-white flex justify-around gap-4 lg:gap-32">
     <svg
     xmlns="http://www.w3.org/2000/svg"
     xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -66,21 +66,21 @@
         xlink:href="#gentle-wave"
         x="50"
         y="0"
-        fill="#475569"
+        fill="#344A53"
         fill-opacity=".2"
       />
       <use
         xlink:href="#gentle-wave"
         x="50"
         y="3"
-        fill="#475569"
+        fill="#344A53"
         fill-opacity=".5"
       />
       <use
         xlink:href="#gentle-wave"
         x="50"
         y="6"
-        fill="#475569"
+        fill="#344A53"
         fill-opacity="1"
       />
     </g>
@@ -121,7 +121,7 @@
         font-family: "Poppins", sans-serif;
         font-weight: 500;
         font-style: normal;   
-    }
+    }    
     .active::after{
         display: block;
     }
