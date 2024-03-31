@@ -2,7 +2,7 @@
     import { onMount } from "svelte";
     import "../app.css"; //import tailwind
     import icon from '$lib/assets/edutopia/edutopia_no_bg.webp';
-    import facebook from '$lib/assets/icons/facebook.svg';
+    import facebook from '$lib/assets/icons/email.svg';
     import instagram from '$lib/assets/icons/instagram.svg';
     import whatsapp from '$lib/assets/icons/whatsapp.svg';
     
@@ -98,14 +98,14 @@
     </div>
     <div class="lg:w-[30vw]">
         <h3>Socials</h3>
-        <div class="flex gap-3 lg:gap-10 mt-6">
-            <a href="/">
+        <div class="flex gap-3 lg:gap-10 mt-6 items-center">
+            <a href="https://www.instagram.com/bimbeledutopia/?hl=en" target="_blank">
                 <img src={instagram} alt="" class="max-w-10 w-10">
             </a>
-            <a href="/">
-                <img src={facebook} alt="" class="max-w-10 w-10">
+            <a href="mailto:example@example.com?subject=Subject%20Here&body=Body%20Here" target="_parent">
+                <img src={facebook} alt="" class="max-w-10 w-10 my-auto">
             </a>
-            <a href="/">
+            <a href="https://wa.me/6287808230745?text=Halo, saya ingin bertanya mengenai bimbel edutopia." target="_blank">
                 <img src={whatsapp} alt="" class="max-w-10 w-10"> 
             </a>
         </div>
