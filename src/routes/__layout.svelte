@@ -105,7 +105,7 @@
             <a href="mailto:example@example.com?subject=Subject%20Here&body=Body%20Here" target="_parent">
                 <img src={facebook} alt="" class="max-w-10 w-10 my-auto">
             </a>
-            <a href="https://wa.me/6287808230745?text=Halo, saya ingin bertanya mengenai bimbel edutopia." target="_blank">
+            <a href="https://wa.me/6287808230745?text=Halo, saya ingin bertanya mengenai bimbel Edutopia." target="_blank">
                 <img src={whatsapp} alt="" class="max-w-10 w-10"> 
             </a>
         </div>
