@@ -18,14 +18,15 @@
 </script>
 
 <Layout active="Home">
-    <section class=" bg-white h-[700px] flex justify-start pl-[15vw] pr-[8vw] items-center gap-32 lg:gap-[15vw]">
-        <div class="blobDiv relative w-[500px] h-[500px] flex hover:scale-110 transition-al duration-300 z-10">
+    <section class="bg-white h-[700px] flex flex-wrap lg:flex-nowrap mt-12 lg:mt-0 justify-center pl-[15vw] pr-[8vw] items-center gap-8 lg:gap-[15vw]">
+        <div class="blobDiv relative w-[350px] h-[350px] lg:w-[500px] lg:h-[500px] flex hover:scale-110 transition-al duration-300 z-10">
             <img src={blob} alt="" id="blob">
             <img src={edutopia} id="edutopia" alt="" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-[50%] -z-1">
         </div>
-        <div class="max-w-[30vw]">
-            <h2 class="text-[80px] text-MainBlue font-semibold">Edutopia</h2>
-            <p>Selamat datang di Edutopia! Tempat belajar yang menginspirasi, memberikan pengalaman pembelajaran yang mendalam dan penuh kesempatan. Bergabunglah dengan kami untuk menjelajahi dunia pengetahuan dan menciptakan masa depan yang cerah.</p>
+        <div class="w-[50vw] lg:max-w-[30vw]">
+            <!-- this h2 below me -->
+            <h2 class="text-6xl w-full bg-red text-center lg:text-start lg:text-[80px] text-MainBlue font-semibold">Edutopia</h2> 
+            <p class="text-sm md:text-lg mt-8 text-center lg:text-start lg:text-lg">Selamat datang di Edutopia! Tempat belajar yang menginspirasi, memberikan pengalaman pembelajaran yang mendalam dan penuh kesempatan. Bergabunglah dengan kami untuk menjelajahi dunia pengetahuan dan menciptakan masa depan yang cerah.</p>
         </div>
     </section>
     <div class="relative h-48 m-0 p-0">
@@ -50,7 +51,7 @@
     </div>
     <section class="bg-white h-[700px] relative flex justify-center items-center gap-6 lg:gap-12 xl:gap-32 mb-12">
         <div>
-            <iframe title="Edutopia 1" class="w-[35vw] min-w-[400px] z-[100] drop-shadow-2xl" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.0382538368!2d106.65855309999999!3d-6.258691499999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69fba154b99c4f%3A0x4baff0429a39216f!2sJl.%20Sutera%20Flamboyan%20I%20No.33%2C%20Pd.%20Jagung%2C%20Kec.%20Serpong%20Utara%2C%20Kota%20Tangerang%20Selatan%2C%20Banten%2015326!5e0!3m2!1sen!2sid!4v1711875442605!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe title="Edutopia 1" class="w-[35vw] min-w-[400px] z-[100] drop-shadow-2xl rounded-2xl hover:scale-110 transition-all duration-300" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.0382538368!2d106.65855309999999!3d-6.258691499999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69fba154b99c4f%3A0x4baff0429a39216f!2sJl.%20Sutera%20Flamboyan%20I%20No.33%2C%20Pd.%20Jagung%2C%20Kec.%20Serpong%20Utara%2C%20Kota%20Tangerang%20Selatan%2C%20Banten%2015326!5e0!3m2!1sen!2sid!4v1711875442605!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <div>
             <h2 class="text-[40px] lg:text-[50px] text-MainBlue font-bold -mb-10">Our</h2>
@@ -70,7 +71,7 @@
             <h2 class="text-white font-bold text-[100px]">Join Us</h2>
             <p class="text-white font-semibold text-[30px] -mt-6">Leave a message!</p>
         </div>    
-        <button class="bg-white text-MainBlue py-2 px-5 text-4xl font-bold rounded-3xl transition-all duration-300 hover:scale-110 w-fit">
+        <button class="bg-white text-MainBlue py-2 px-5 text-4xl font-bold rounded-3xl transition-all duration-300 hover:scale-110 w-fit drop-shadow-xl">
             <a href="https://wa.me/6287808230745?text=Halo, saya ingin bertanya mengenai bimbel Edutopia." target="_blank">
                 Click Here
             </a>

@@ -5,21 +5,11 @@
     import facebook from '$lib/assets/icons/email.svg';
     import instagram from '$lib/assets/icons/instagram.svg';
     import whatsapp from '$lib/assets/icons/whatsapp.svg';
-    
-
-    let isMobile = false;
-
-    onMount(() => {
-        if (window.innerWidth < 688) {
-            isMobile = true;
-        }
-    });
 
     export let active;
 
 </script>
 
-{#if !isMobile}
 <nav class="sticky top-0 shadow-md flex justify-center gap-0 bg-MainBlue h-20 px-10 text-white md:gap-32 z-50">
     <a href="/">
         <img src={icon} alt="" class="w-14 h-14 absolute left-10 top-1/2 -translate-y-1/2 transition-all duration-200 hover:scale-110">
@@ -112,9 +102,6 @@
     </div>
 </footer>
 
-{:else}
-<h1 class="bg-green-600">ini mobile</h1>
-{/if}
 
 <style>
     *{
