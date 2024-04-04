@@ -32,14 +32,14 @@
     <div class="relative h-48 m-0 p-0">
         <img src={blueLayer1} alt="" class="w-full absolute bottom-[-5px]">
     </div>
-    <section class="bg-MainBlue h-[800px] flex justify-center items-center pl-[3vw] pr-[5vw] pt-[10vw] xl:pt-0 lg:gap-16">
-        <div class="w-[500px] h-fit text-center p-32 flex flex-col">
+    <section class="bg-MainBlue h-[800px] flex flex-wrap lg:flex-nowrap justify-center items-center pl-[3vw] pr-[5vw] lg:pt-[10vw] xl:pt-0 lg:gap-16">
+        <div class="w-[500px] h-fit text-center lg:p-32 flex flex-col">
             <h2 class="text-[80px] text-white font-bold -mb-12">Meet</h2>
             <h2 class="text-[70px] text-white -mb-12">Our</h2>
             <h2 class="text-[80px] text-white font-bold">Team</h2>
         </div>
-        <div class="relative w-[800px] mt-[10vw] xl:mt-0 h-[30vw] z-10">
-            <Polaroid polaroidImg={crew1} extraClass="absolute top-0 left-0 -rotate-6 saturate-0 hover:scale-[1.3] hover:rotate-0 hover:z-[100] hover:saturate-100 transition-all duration-300" />
+        <div class="relative w-[80vw] lg:w-[800px] mt-[10vw] xl:mt-0  h-96 lg:h-[30vw] z-1">
+            <Polaroid polaroidImg={crew1} extraClass="absolute top-0 left-0 -rotate-6  saturate-0 hover:scale-[1.3] hover:rotate-0 hover:z-[100] hover:saturate-100 transition-all duration-300" />
             <Polaroid polaroidImg={crew2} extraClass="absolute top-0 right-0 rotate-12 saturate-0 hover:scale-[1.3] hover:rotate-0 hover:z-[100] hover:saturate-100 transition-all duration-300 transition-all duration-300"/>
             <Polaroid polaroidImg={crew3} extraClass="absolute top-1/2 left-1/2 saturate-0 -translate-x-1/2 -translate-y-1/2 rotate-6 hover:scale-[1.3] hover:rotate-0 hover:z-[100] hover:saturate-100 transition-all duration-300 transition-all duration-300"/>
             <Polaroid polaroidImg={crew4} extraClass="absolute bottom-0 left-0 saturate-0 rotate-6 hover:scale-[1.3] hover:rotate-0 hover:z-[100] hover:saturate-100 transition-all duration-300 transition-all duration-300"/>
