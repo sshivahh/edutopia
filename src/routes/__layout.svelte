@@ -8,9 +8,13 @@
 
     export let active;
 
+    $: innerWidth = 0
+
 </script>
 
-<nav class="sticky top-0 shadow-md flex justify-center gap-0 bg-MainBlue h-20 px-10 text-white md:gap-32 z-50">
+<svelte:window bind:innerWidth />
+
+<nav class="sticky top-0 shadow-md flex justify-end gap-0 bg-MainBlue h-20 px-10 text-white md:gap-32 z-50">
     <a href="/">
         <img src={icon} alt="" class="w-14 h-14 absolute left-10 top-1/2 -translate-y-1/2 transition-all duration-200 hover:scale-110">
     </a>
@@ -33,7 +37,7 @@
     </div>
 </nav>
 <slot></slot>
-<footer class="bg-[#344A53] h-[300px] px-16 py-24 w-full absolute text-white flex justify-around gap-4 lg:gap-32">
+<footer class="bg-[#344A53] lg:h-[300px] px-16 py-24 w-full absolute text-white flex justify-around gap-4 lg:gap-32">
     <svg
     xmlns="http://www.w3.org/2000/svg"
     xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -76,6 +80,7 @@
     </g>
     </svg>
     
+    {#if innerWidth  > 600}
     <div class="lg:w-[30vw]">
         <h3>Edutopia</h3>
         <p class="text-sm opacity-65 mt-6">Edutopia is the largest and most respected learning centre in south east asia. We have more than 6000 teachers all across the globe.</p>
@@ -86,9 +91,12 @@
             Jl. Sutera Flamboyan I No.33 Pd. Jagung, Kec. Serpong Utara, Kota Tangerang Selatan, Banten 15326
         </p>
     </div>
+    {/if}
     <div class="lg:w-[30vw]">
+        {#if innerWidth>600}
         <h3>Socials</h3>
-        <div class="flex gap-3 lg:gap-10 mt-6 items-center">
+        {/if}
+        <div class="flex {innerWidth > 600? 'gap-3' : 'gap-10'} lg:gap-10 mt-6 items-center">
             <a href="https://www.instagram.com/bimbeledutopia/?hl=en" target="_blank">
                 <img src={instagram} alt="" class="max-w-10 w-10">
             </a>
