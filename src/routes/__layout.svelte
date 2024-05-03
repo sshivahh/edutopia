@@ -108,6 +108,9 @@
             </a>
         </div>
     </div>
+    <div class="bg-[#344A53] brightness-[90%] absolute bottom-0 w-full py-1">
+        <p class="text-sm opacity-65 text-center">© 2020 - 2022 Edutopia | All rights reserved.</p>
+    </div>
 </footer>
 
 
