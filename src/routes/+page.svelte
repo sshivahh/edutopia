@@ -38,7 +38,7 @@
             <h2 class="text-[70px] text-white -mb-12">Our</h2>
             <h2 class="text-[80px] text-white font-bold">Team</h2>
         </div>
-        <div class="relative w-[80vw] lg:w-[800px] mt-[10vw] xl:mt-0  h-96 lg:h-[30vw] z-10">
+        <div class="relative w-[80vw] lg:w-[800px] mt-[10vw] xl:mt-0  h-[70vw] md:h-[50vw] lg:h-[30vw] z-[40]">
             <Polaroid polaroidImg={crew1} extraClass="absolute top-0 left-0 -rotate-6  saturate-0 hover:scale-[1.3] hover:rotate-0 hover:z-[100] hover:saturate-100 transition-all duration-300" />
             <Polaroid polaroidImg={crew2} extraClass="absolute top-0 right-0 rotate-12 saturate-0 hover:scale-[1.3] hover:rotate-0 hover:z-[100] hover:saturate-100 transition-all duration-300 transition-all duration-300"/>
             <Polaroid polaroidImg={crew3} extraClass="absolute top-1/2 left-1/2 saturate-0 -translate-x-1/2 -translate-y-1/2 rotate-6 hover:scale-[1.3] hover:rotate-0 hover:z-[100] hover:saturate-100 transition-all duration-300 transition-all duration-300"/>
