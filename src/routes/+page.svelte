@@ -18,12 +18,12 @@
 </script>
 
 <Layout active="Home">
-    <section class="bg-white h-[700px] flex flex-wrap lg:flex-nowrap mt-12 lg:mt-0 justify-center pl-[15vw] pr-[8vw] items-center gap-8 lg:gap-[15vw]">
+    <section class="bg-white h-[700px] flex flex-wrap lg:flex-nowrap mt-12 lg:mt-0 justify-center  items-center gap-8 lg:gap-[15vw]">
         <div class="blobDiv relative w-[350px] h-[350px] lg:w-[500px] lg:h-[500px] flex hover:scale-110 transition-al duration-300 z-10">
             <img src={blob} alt="" id="blob">
             <img src={edutopia} id="edutopia" alt="" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-[50%] -z-1">
         </div>
-        <div class="w-[50vw] lg:max-w-[30vw]">
+        <div class="w-[75vw] lg:max-w-[30vw]">
             <!-- this h2 below me -->
             <h2 class="text-6xl w-full text-center lg:text-start lg:text-[80px] text-MainBlue font-semibold">Edutopia</h2> 
             <p class="text-sm md:text-lg mt-8 text-center lg:text-start lg:text-lg">Selamat datang di Edutopia! Tempat belajar yang menginspirasi, memberikan pengalaman pembelajaran yang mendalam dan penuh kesempatan. Bergabunglah dengan kami untuk menjelajahi dunia pengetahuan dan menciptakan masa depan yang cerah.</p>
