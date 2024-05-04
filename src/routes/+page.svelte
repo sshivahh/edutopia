@@ -49,13 +49,13 @@
     <div class="relative h-48 m-0 p-0 bg-MainBlue z-[10]">
         <img src={whiteLayer1} alt="" class="w-full absolute bottom-0">
     </div>
-    <section class="bg-white h-[700px] relative flex flex-wrap justify-center items-center gap-6 lg:gap-12 xl:gap-32 mb-12">
+    <section class="bg-white h-[700px] relative flex flex-wrap justify-center items-center gap-10 lg:gap-12 xl:gap-32 mb-12 px-12">
         <div>
             <iframe title="Edutopia 1" class="w-[35vw] min-w-[400px] z-[100] drop-shadow-2xl rounded-2xl hover:scale-110 transition-all duration-300" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.0382538368!2d106.65855309999999!3d-6.258691499999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69fba154b99c4f%3A0x4baff0429a39216f!2sJl.%20Sutera%20Flamboyan%20I%20No.33%2C%20Pd.%20Jagung%2C%20Kec.%20Serpong%20Utara%2C%20Kota%20Tangerang%20Selatan%2C%20Banten%2015326!5e0!3m2!1sen!2sid!4v1711875442605!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        <div>
-            <h2 class="text-[40px] lg:text-[50px] text-MainBlue font-bold -mb-10">Our</h2>
-            <h2 class="text-[60px] lg:text-[80px] text-MainBlue font-bold -mt-10">Location</h2>
+        <div class="text-center md:text-start">
+            <h2 class="text-[40px] lg:text-[50px] text-MainBlue font-bold ">Our</h2>
+            <h2 class="text-[60px] lg:text-[80px] text-MainBlue font-bold -mt-8">Location</h2>
             <button class="bg-MainBlue drop-shadow-md text-white text-xl font-semibold px-3 py-2 rounded-2xl duration-300 transition-all hover:opacity-80 hover:scale-110">
                 <a href="https://www.google.com/maps/place/Jl.+Sutera+Flamboyan+I+No.33,+Pd.+Jagung,+Kec.+Serpong+Utara,+Kota+Tangerang+Selatan,+Banten+15326/@-6.2586915,106.6585531,17z/data=!3m1!4b1!4m6!3m5!1s0x2e69fba154b99c4f:0x4baff0429a39216f!8m2!3d-6.2586915!4d106.6585531!16s%2Fg%2F11f62nr4m0?entry=ttu" target="_blank">
                     View on Google Maps

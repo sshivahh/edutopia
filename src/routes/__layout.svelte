@@ -5,11 +5,17 @@
     import facebook from '$lib/assets/icons/email.svg';
     import instagram from '$lib/assets/icons/instagram.svg';
     import whatsapp from '$lib/assets/icons/whatsapp.svg';
+    import navOpen from '$lib/assets/icons/nav-open.svg';
+    import navClose from '$lib/assets/icons/nav-close.svg';
 
     export let active;
+    let showSidebar = true;
 
-    $: innerWidth = 0
+    $: innerWidth = 0;
 
+    function toggleSidebar() {
+        showSidebar = !showSidebar;
+    }
 </script>
 
 <svelte:window bind:innerWidth />
@@ -18,23 +24,52 @@
     <a href="/">
         <img src={icon} alt="" class="w-14 h-14 absolute left-10 top-1/2 -translate-y-1/2 transition-all duration-200 hover:scale-110">
     </a>
+    {#if innerWidth > 800}
     <div class="flex">
         <a href="/">
-            <button class="{active === 'Home' ? 'active' : ''} w-32 h-20 lg:w-48 hover:bg-white hover:text-MainBlue hover:text-lg transition-all duration-300" >
+            <button class="{active === 'Home' ? 'active' : ''} w-32 h-20 lg:w-48 hover:bg-white hover:text-MainBlue hover:text-lg transition-all duration-300 desktop-btn" >
                 Home
             </button>
         </a>
         <a href="/about">
-            <button class="{active === 'About' ? 'active' : ''} w-32 h-20 lg:w-48 hover:bg-white hover:text-MainBlue hover:text-lg transition-all duration-300" >
+            <button class="{active === 'About' ? 'active' : ''} w-32 h-20 lg:w-48 hover:bg-white hover:text-MainBlue hover:text-lg transition-all duration-300 desktop-btn" >
                 About
             </button>
         </a>
         <a href="/contact">
-            <button class="{active === 'Contact' ? 'active' : ''} w-32 h-20 lg:w-48 hover:bg-white hover:text-MainBlue hover:text-lg transition-all duration-300" >
+            <button class="{active === 'Contact' ? 'active' : ''} w-32 h-20 lg:w-48 hover:bg-white hover:text-MainBlue hover:text-lg transition-all duration-300 desktop-btn" >
                 Contact
             </button>
         </a>
     </div>
+    {:else}
+    <div class="flex items-center">
+        <button on:click={toggleSidebar}>
+            <img src={navOpen} alt="" class="w-10">
+        </button>
+    </div>
+    
+    <div class="fixed top-0 right-0 flex flex-col drop-shadow-lg bg-MainBlue h-[100vh] min-w-[270px] w-[40vw] transition-all duration-300  {showSidebar? "" : "translate-x-[20rem]"}">
+        <button on:click={toggleSidebar} class="absolute top-6 right-10">
+            <img src={navClose} alt="" class="w-8">
+        </button>
+        <a href="/" class="mt-20">
+            <button class="{active === 'Home' ? 'active' : ''} w-full h-20 lg:w-48 hover:bg-white hover:text-MainBlue hover:text-lg transition-all duration-300 desktop-btn" >
+                Home
+            </button>
+        </a>
+        <a href="/about">
+            <button class="{active === 'About' ? 'active' : ''} w-full h-20 lg:w-48 hover:bg-white hover:text-MainBlue hover:text-lg transition-all duration-300 desktop-btn" >
+                About
+            </button>
+        </a>
+        <a href="/contact">
+            <button class="{active === 'Contact' ? 'active' : ''} w-full h-20 lg:w-48 hover:bg-white hover:text-MainBlue hover:text-lg transition-all duration-300 desktop-btn" >
+                Contact
+            </button>
+        </a>
+    </div>
+    {/if}
 </nav>
 <slot></slot>
 <footer class="bg-[#344A53] lg:h-[300px] px-16 py-24 w-full absolute text-white flex justify-around gap-4 lg:gap-32">
@@ -123,10 +158,9 @@
     .active::after{
         display: block;
     }
-    button {
+    .desktop-btn{
         position: relative;
     }
-
     button::after {
         display: none;
         content: "";
@@ -141,7 +175,7 @@
         transition: background-color 0.3s; /* Smooth transition for color change */
     }
 
-    button:hover::after {
+    .desktop-btn:hover::after {
         display: block;
         background-color: #91d8f4; /* Color of the dot on hover */
         animation: floatUpDown 500ms infinite alternate ease-out; /* Animation for floating effect */
