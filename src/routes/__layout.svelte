@@ -9,7 +9,7 @@
     import navClose from '$lib/assets/icons/nav-close.svg';
 
     export let active;
-    let showSidebar = false;
+    let showSidebar = true;
 
     $: innerWidth = 0;
 
@@ -49,7 +49,7 @@
         </button>
     </div>
     
-    <div class="fixed top-0 right-0 flex flex-col drop-shadow-lg bg-MainBlue h-[100vh] min-w-[270px] w-[40vw] transition-all duration-300  {showSidebar? "" : "translate-x-[20rem]"}">
+    <div class="fixed top-0 right-0 flex flex-col drop-shadow-lg bg-MainBlue h-[100vh] min-w-[270px] w-[40vw] transition-all duration-300 z-[10] {showSidebar? "" : "translate-x-[20rem]"}">
         <button on:click={toggleSidebar} class="absolute top-6 right-10">
             <img src={navClose} alt="" class="w-8">
         </button>
@@ -69,6 +69,9 @@
             </button>
         </a>
     </div>
+
+    <!-- Semi-transparent overlay -->
+    <div class="{showSidebar ? 'fixed opacity-20' : 'hidden opacity-0'} top-0 left-0 w-full h-full bg-black transition-all duration-300 z-[9]"></div>
     {/if}
 </nav>
 <slot></slot>
