@@ -71,7 +71,7 @@
     </div>
 
     <!-- Semi-transparent overlay -->
-    <div class="{showSidebar ? 'fixed opacity-20' : 'hidden opacity-0'} top-0 left-0 w-full h-full bg-black transition-all duration-300 z-[9]"></div>
+    <div on:click={toggleSidebar} class="{showSidebar ? 'fixed opacity-20' : 'hidden opacity-0'} top-0 left-0 w-full h-full bg-black transition-all duration-300 z-[9]"></div>
     {/if}
 </nav>
 <slot></slot>
