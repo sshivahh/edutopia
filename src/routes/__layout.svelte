@@ -9,7 +9,7 @@
     import navClose from '$lib/assets/icons/nav-close.svg';
 
     export let active;
-    let showSidebar = true;
+    let showSidebar = false;
 
     $: innerWidth = 0;
 
