@@ -92,14 +92,14 @@
     <div class="relative h-48 m-0 p-0">
       <img src={blueLayer1} alt="" class="w-full absolute bottom-[-5px]">
     </div>
-    <section class="h-[1000px] bg-MainBlue">
+    <section class="h-[800px] md:h-[900px] lg:h-[1000px] bg-MainBlue pt-12 md:p-0">
       <div class="w-fit font-bold text-white text-center m-auto leading-[90px] mb-12 md:mb-24">
         <h1 class="text-6xl">Our</h1>
         <h1 class="text-8xl">Gallery</h1>
       </div>
       <div class="photo-wrapper gap-5 md:gap-16" id="photoWrapper" bind:this={photoWrapper}>
         {#each photoElements as photoSrc, index}
-          <div class="photo shadow-lg  w-[15rem] h-[15rem] md:w-96 md:h-96" class:even={index % 2 === 0}>
+          <div class="photo shadow-lg  w-[15rem] h-[15rem] md:w-[20rem] md:h-[20rem] lg:w-96 lg:h-96" class:even={index % 2 === 0}>
             <img src={photoSrc} alt="">
           </div>
         {/each}
