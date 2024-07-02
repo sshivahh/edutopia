@@ -14,12 +14,38 @@
     import crew4 from "$lib/assets/images/cropped4.jpeg"
     import crew5 from "$lib/assets/images/cropped5.jpeg"
 
+    let blobDiv;
+    let polaroids = [];
 
+    function handleMouseMove(event, element) {
+        const rect = element.getBoundingClientRect();
+        const mouseX = event.clientX;
+        const mouseY = event.clientY;
+        const centerX = rect.left + rect.width / 2;
+        const centerY = rect.top + rect.height / 2;
+
+        const offsetX = (mouseX - centerX) * 0.2;
+        const offsetY = (mouseY - centerY) * 0.2;
+
+        element.style.transform = `translate(${offsetX}px, ${offsetY}px) scale(1.1)`;
+    }
+
+    function handleMouseLeave(element) {
+        element.style.transform = `translate(0, 0) scale(1)`;
+    }
+
+    function addMouseListeners(element) {
+        element.addEventListener('mousemove', (event) => handleMouseMove(event, element));
+        element.addEventListener('mouseleave', () => handleMouseLeave(element));
+    }
+
+    $: if (blobDiv) addMouseListeners(blobDiv);
+    $: polaroids.forEach(addMouseListeners);
 </script>
 
 <Layout active="Home">
     <section class="bg-white h-[700px] flex flex-wrap lg:flex-nowrap mt-12 lg:mt-0 justify-center  items-center gap-8 lg:gap-[15vw]">
-        <div class="blobDiv relative w-[350px] h-[350px] lg:w-[500px] lg:h-[500px] flex hover:scale-110 transition-al duration-300 z-10">
+        <div bind:this={blobDiv} class="blobDiv relative w-[350px] h-[350px] lg:w-[500px] lg:h-[500px] flex hover:scale-110 transition-al duration-300 z-10">
             <img src={blob} alt="" id="blob">
             <img src={edutopia} id="edutopia" alt="" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-[50%] -z-1">
         </div>

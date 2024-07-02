@@ -3,5 +3,7 @@
 </script>
 
 <Layout active="Contact">
-    <h1>contact</h1>
+    <section class="h-[700px] bg-white">
+
+    </section>
 </Layout>

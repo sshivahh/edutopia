@@ -166,15 +166,6 @@
       transform: rotate(-2deg);
     }
   
-    .tooltip {
-      display: block;
-      position: absolute;
-      background-color: rgba(0, 0, 0, 0.7);
-      color: white;
-      padding: 8px;
-      border-radius: 4px;
-      pointer-events: none;
-      font-size: 1.25rem;
-    }
+
   </style>
   
