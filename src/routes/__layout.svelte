@@ -126,7 +126,7 @@
     <div class="lg:w-[30vw]">
         <h3>Location</h3>
         <p class="text-sm opacity-65 mt-6">
-            Jl. Sutera Flamboyan I No.33 Pd. Jagung, Kec. Serpong Utara, Kota Tangerang Selatan, Banten 15326
+            Ruko De Mansion D-11, Jl. Jalur Sutera, RT.001/RW.014, Alam, Sutera, Tangerang City, Banten 15143
         </p>
     </div>
     {/if}
