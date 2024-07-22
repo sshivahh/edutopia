@@ -61,7 +61,7 @@
     <section class="bg-MainBlue h-[800px] flex flex-wrap lg:flex-nowrap justify-center items-center pl-[3vw] pr-[5vw] lg:pt-[10vw] xl:pt-0 lg:gap-16">
         <div class="w-[500px] h-fit text-center lg:p-32 flex flex-col">
             <h2 class="text-[80px] text-white font-bold -mb-12">Meet</h2>
-            <h2 class="text-[70px] text-white -mb-12">Our</h2>
+            <h2 class="text-[70px] text-white -mb-14">Our</h2>
             <h2 class="text-[80px] text-white font-bold">Team</h2>
         </div>
         <div class="relative w-[80vw] lg:w-[800px] mt-[10vw] xl:mt-0  h-[70vw] md:h-[50vw] lg:h-[30vw] z-[40]">
@@ -77,13 +77,13 @@
     </div>
     <section class="bg-white h-[700px] relative flex flex-wrap justify-center items-center gap-10 lg:gap-12 xl:gap-32 mb-12 px-12">
         <div>
-            <iframe title="Edutopia 1" class="w-[35vw] min-w-[400px] z-[100] drop-shadow-2xl rounded-2xl hover:scale-110 transition-all duration-300" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.0382538368!2d106.65855309999999!3d-6.258691499999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69fba154b99c4f%3A0x4baff0429a39216f!2sJl.%20Sutera%20Flamboyan%20I%20No.33%2C%20Pd.%20Jagung%2C%20Kec.%20Serpong%20Utara%2C%20Kota%20Tangerang%20Selatan%2C%20Banten%2015326!5e0!3m2!1sen!2sid!4v1711875442605!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe title="Edutopia 1" class="w-[35vw] min-w-[400px] z-[100] drop-shadow-2xl rounded-2xl hover:scale-110 transition-all duration-300" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247.89131618728229!2d106.66042711297462!3d-6.229273327383737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69fb7e9cf179bb%3A0x8706374b1b477476!2sBimbel%20Edutopia!5e0!3m2!1sen!2sid!4v1721664918935!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <div class="text-center md:text-start">
             <h2 class="text-[40px] lg:text-[50px] text-MainBlue font-bold ">Our</h2>
             <h2 class="text-[60px] lg:text-[80px] text-MainBlue font-bold -mt-8">Location</h2>
             <button class="bg-MainBlue drop-shadow-md text-white text-xl font-semibold px-3 py-2 rounded-2xl duration-300 transition-all hover:opacity-80 hover:scale-110">
-                <a href="https://www.google.com/maps/place/Jl.+Sutera+Flamboyan+I+No.33,+Pd.+Jagung,+Kec.+Serpong+Utara,+Kota+Tangerang+Selatan,+Banten+15326/@-6.2586915,106.6585531,17z/data=!3m1!4b1!4m6!3m5!1s0x2e69fba154b99c4f:0x4baff0429a39216f!8m2!3d-6.2586915!4d106.6585531!16s%2Fg%2F11f62nr4m0?entry=ttu" target="_blank">
+                <a href="https://maps.app.goo.gl/7XKFEzS2yVFbK6kM9" target="_blank">
                     View on Google Maps
                 </a>
             </button>
