@@ -75,9 +75,9 @@
     <div class="relative h-48 m-0 p-0 bg-MainBlue z-[10]">
         <img src={whiteLayer1} alt="" class="w-full absolute bottom-0">
     </div>
-    <section class="bg-white h-[700px] relative flex flex-wrap justify-center items-center gap-10 lg:gap-12 xl:gap-32 mb-12 px-24 md:px-12">
+    <section class="bg-white h-[700px] relative flex flex-wrap justify-center items-center gap-10 lg:gap-12 xl:gap-32 mb-12 px-12">
         <div>
-            <iframe title="Edutopia 1" class="w-[35vw] min-w-[400px] z-[100] drop-shadow-2xl rounded-2xl md:hover:scale-110 transition-all duration-300" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247.89131618728229!2d106.66042711297462!3d-6.229273327383737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69fb7e9cf179bb%3A0x8706374b1b477476!2sBimbel%20Edutopia!5e0!3m2!1sen!2sid!4v1721664918935!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe title="Edutopia 1" class="w-[70vw] md:w-[35vw] md:min-w-[400px] z-[100] drop-shadow-2xl rounded-2xl md:hover:scale-110 transition-all duration-300" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247.89131618728229!2d106.66042711297462!3d-6.229273327383737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69fb7e9cf179bb%3A0x8706374b1b477476!2sBimbel%20Edutopia!5e0!3m2!1sen!2sid!4v1721664918935!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <div class="text-center md:text-start">
             <h2 class="text-[40px] lg:text-[50px] text-MainBlue font-bold ">Our</h2>
