@@ -47,7 +47,7 @@
     <section class="bg-white h-[700px] flex flex-wrap lg:flex-nowrap mt-12 lg:mt-0 justify-center  items-center gap-8 lg:gap-[15vw]">
         <div bind:this={blobDiv} class="blobDiv relative w-[350px] h-[350px] lg:w-[500px] lg:h-[500px] flex hover:scale-110 transition-al duration-300 z-10">
             <img src={blob} alt="" id="blob">
-            <img src={edutopia} id="edutopia" alt="" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-[50%] -z-1">
+            <img src={edutopia} id="edutopia" alt="" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-[50%] -z-1 w-56">
         </div>
         <div class="w-[75vw] lg:max-w-[30vw]">
             <!-- this h2 below me -->
