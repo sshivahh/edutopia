@@ -50,7 +50,6 @@
             <img src={edutopia} id="edutopia" alt="" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-[50%] -z-1 w-56">
         </div>
         <div class="w-[75vw] lg:max-w-[30vw]">
-            <!-- this h2 below me -->
             <h2 class="text-6xl w-full text-center lg:text-start lg:text-[80px] text-MainBlue font-semibold">Edutopia</h2> 
             <p class="text-sm md:text-lg mt-8 text-center lg:text-start lg:text-lg">Selamat datang di Edutopia! Tempat belajar yang menginspirasi, memberikan pengalaman pembelajaran yang mendalam dan penuh kesempatan. Bergabunglah dengan kami untuk menjelajahi dunia pengetahuan dan menciptakan masa depan yang cerah.</p>
         </div>

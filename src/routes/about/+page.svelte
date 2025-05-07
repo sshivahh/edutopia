@@ -25,6 +25,7 @@
     import teach19 from "$lib/assets/images/teach19.jpeg";
     import teach20 from "$lib/assets/images/teach20.jpeg";
     import teach21 from "$lib/assets/images/teach21.jpeg";
+    import teach22 from "$lib/assets/images/teach22.jpeg";
   
     import Card from "../components/Card.svelte";
   
@@ -35,7 +36,7 @@
       teach1, teach2, teach3, teach4, teach5, teach7, 
       teach8, teach9, teach10, teach11, teach12, teach13, 
       teach14, teach15, teach16, teach17, teach18, teach19, 
-      teach20, teach21
+      teach20, teach21, teach22
     ];
   
     // Shuffle the photoElements array on component mount
